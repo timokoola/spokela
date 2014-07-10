@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation 5</title>
+    <title>Spotify vs. Radio -laskuri</title>
     <!-- build:css(.tmp) styles/app.css -->
     <link rel="stylesheet" href="styles/app.css" />
     <!-- endbuild -->
@@ -14,155 +14,89 @@
   <body>
     <div class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <h1>Spotify vs. Radio -laskuri</h1>
+        <p>Tämä on laskuri, jolla voi laskea kuinka huonosti Spotify maksaa</p>
+
+        <p>Käytetyt datapisteet &mdash; Spotify</p> 
+        <blockquote>Levoton tyttö kuunneltiin streaming-palveluissa vuoden 2013 aikana kaikkiaan 1 253 640 kertaa. </blockquote>
+        <blockquote>Näistä kuunteluista minulle tilitettiin vuonna 2013 levy-yhtiön maksamina rojalteina 3 098 euroa &mdash; Tämän lisäksi Teosto tilitti samoista kuunteluista tekijänoikeuskorvauksia 1 302 euroa. Tienasin siis Levottomalla tytöllä streaming-palveluista kaikkiaan 4 400 euroa.</blockquote>
+
+        <p>Käytetyt datapisteet &mdash; radio</p> 
+        <blockquote>se soi vuonna 2013 kaupallisilla kanavilla 5 530 kertaa ja YLEn kanavilla 659 kertaa. Nämä ovat jo todella kovia lukuja.</blockquote> 
+        <blockquote>Teosto tilitti minulle Levottoman tytön vuoden 2013 radiosoitoista 37 769 euroa. Gramexilta tuli 20 944 euroa. Yhteensä Levoton tyttö jauhoi minulle radiossa 58 713 euroa.</blockquote>
+
+        <ol>
+          <li>Spotify maksaa huonosti</li>
+          <li>Spotifyn yleisö on pieni</li>
+          <li>Kappale on Spotifyssa selvästi vähemmän suosittu kuin radiossa</li>
+        </ol>
+
       </div>
     </div>
-    
+
     <div class="row">
       <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+        <div class="large-6 columns ">
+        <h3>Spotify</h3>
+        <div id="spotify_slider" class="range-slider" data-slider data-options="start: 1; end: 10; step: 0.1;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden" name="spotify">
+
+        
         </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
+        <p>Kuuntelijaa per striimauskerta:<span id="spotify_value" class="dataright"></span></p>
+        <p>Kokonaisyleisö: <span id="spotify_total_audience" class="dataright"></span> </p>
+        <p>Kokonaistuotto: <span id="spotify_total" class="dataright">4400&euro;</span> </p>
+        <p>Hinta per korvapari: <span id="spotify_price" class="dataright"></span> </p>
+
+       </div>
+
+
+
+       <div class="large-6 columns">
+        <h3>Radio</h3>
+        <div id="radio_slider"  class="range-slider" data-slider data-options="display_selector: #radio_value; start: 1000; end: 100000; step: 1000;">
+        <span class="range-slider-handle"></span>
+        <span class="range-slider-active-segment"></span>
+        <input type="hidden" name="radio">
+        
         </div>
+        <p>Kuuntelijaa per radiosoitto: <span id="radio_value" class="dataright"></span><p>
+        <p>Kokonaisyleisö: <span id="radio_total_audience" class="dataright"></span> </p>
+        <p>Kokonaistuotto: <span id="radio_total" class="dataright">58713&euro;</span> </p>
+        <p>Hinta per korvapari: <span id="radio_price" class="dataright"></span> </p>
+       </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
+      <div class="large-12 columns panel"> 
+        <p>Sama korvaparihinta kuin Spotifyssa saavutetaan <span id="equil"></span> keskimääräisellä radiokuuntelijalla.</p>
       </div>
     </div>
+
+    <div class="row">
+      <div class="large-12 columns panel"> 
+        <p>Kappaleen kuuntelukertoja per suomalainen kertyy <span id="radio_aud"></span> kuuntelijan keskiarvoyleisöllä noin <span id="radio_avg"></span> kappaletta.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3>Yhteenveto</h3>
+
+        <p>Spotify on pienempi. Merkittävästi. Aivan todella merkittävästi. Jos keskiverto radiosoitolla tavoittaa 50000 kuulijaa, kokonaiskorvaparimäärä on noin satakertainen Spotifyihin verrattuna. Silti radio-soitolla tienaa vain hieman yli kolmetoista kertaa paremmin kuin Spotify-striimauksella.</p>
+
+
+      </div></div>
+
+   
     <!-- build:js scripts/vendor/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
     <script src="js/app.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
