@@ -43,7 +43,7 @@ function updateRadio() {
   $("#radio_avg").text((radio_total_audience/suomi).toFixed(1));
   var price_per_play = (radio_total / radio_total_audience).toFixed(7);
 
-  var equil = 1 / ((spotify_play_price * radio_total) / radio_plays);
+  var equil = ((radio_total / spotify_play_price) / radio_plays);
 
   $("#equil").text(equil.toFixed(2));
 
