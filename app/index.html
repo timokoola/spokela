@@ -15,21 +15,20 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Spotify vs. Radio -laskuri</h1>
-        <p>Tämä on laskuri, jolla voi laskea kuinka huonosti Spotify maksaa</p>
+        <p>Tämä on laskuri, jolla voi laskea kuinka huonosti Spotify maksaa. Perustuu Anssi Kelan erionomaiseeen blogaukseen Teoston blogissa. Onko miljoona soittokertaa paljon vai vähän? Kusettaako Spotify artistia vai jääkö jotain kertomatta.</p>
 
-        <p>Käytetyt datapisteet &mdash; Spotify</p> 
+        <p>Käytetyt datapisteet &mdash; Spotify:</p> 
         <blockquote>Levoton tyttö kuunneltiin streaming-palveluissa vuoden 2013 aikana kaikkiaan 1 253 640 kertaa. </blockquote>
         <blockquote>Näistä kuunteluista minulle tilitettiin vuonna 2013 levy-yhtiön maksamina rojalteina 3 098 euroa &mdash; Tämän lisäksi Teosto tilitti samoista kuunteluista tekijänoikeuskorvauksia 1 302 euroa. Tienasin siis Levottomalla tytöllä streaming-palveluista kaikkiaan 4 400 euroa.</blockquote>
 
-        <p>Käytetyt datapisteet &mdash; radio</p> 
+        <p>Käytetyt datapisteet &mdash; radio:</p> 
         <blockquote>se soi vuonna 2013 kaupallisilla kanavilla 5 530 kertaa ja YLEn kanavilla 659 kertaa. Nämä ovat jo todella kovia lukuja.</blockquote> 
         <blockquote>Teosto tilitti minulle Levottoman tytön vuoden 2013 radiosoitoista 37 769 euroa. Gramexilta tuli 20 944 euroa. Yhteensä Levoton tyttö jauhoi minulle radiossa 58 713 euroa.</blockquote>
 
-        <ol>
-          <li>Spotify maksaa huonosti</li>
-          <li>Spotifyn yleisö on pieni</li>
-          <li>Kappale on Spotifyssa selvästi vähemmän suosittu kuin radiossa</li>
-        </ol>
+        
+        <h3>Vertailukelpoisuus</h3>
+
+        <p>Spotify-soittokertojen ja radiosoittojen vertailu suoraan tuottaa aika kylmäävän johtopäätöksen: yhdellä Spotify-soitolla tienaa noin 0,009&euro;, kun yksi radiosoittokerta tuottaa mukavat 9,49€. Onko radio siis tuhat kertaa parempi tulonlähde kuin Spotify? Vai vertailemmeko vääriä lukuja? Perusero Spotify-kuuntelulla ja radiokuuntelulla on ilmeinen: Spotify-soittoa kuuntelee yksi tai korkeintaan muutama ihminen kerrallaan, radio-ohjelmalla voi olla parhaimmillaan satojatuhansia kuulijoita (huonoimmillaan toki ihan muutama). Alla olevalla laskurilla voit arvioida kuinka merkittävästä erosta on kysymys.</p>
 
       </div>
     </div>
@@ -71,6 +70,9 @@
     </div>
 
     <div class="row">
+      <div class="large-12 columns">
+        <h3>Näillä luvuilla</h3>
+      </div> 
       <div class="large-12 columns panel"> 
         <p>Sama korvaparihinta kuin Spotifyssa saavutetaan <span id="equil" class="sumem"></span> keskimääräisellä radiokuuntelijalla.</p>
       </div>
@@ -93,10 +95,33 @@
       <div class="large-12 columns">
         <h3>Yhteenveto</h3>
 
-        <p>Spotify on pienempi. Merkittävästi. Aivan todella merkittävästi. Jos keskiverto radiosoitolla tavoittaa 50000 kuulijaa, kokonaiskorvaparimäärä on noin satakertainen Spotifyihin verrattuna. Silti radio-soitolla tienaa vain hieman yli kolmetoista kertaa paremmin kuin Spotify-striimauksella.</p>
+        <p>Spotify on pienempi. Merkittävästi. Aivan todella merkittävästi. Jos keskiverto radiosoitolla tavoittaa 50000 kuulijaa, kokonaiskorvaparimäärä on noin satakertainen Spotifyihin verrattuna. Jos radiosoitolla tavoittaa 5000 ihmistä, radiolla tavoittaa kymmenkertaisen määrän korvapareja. Naivisti keskiarvoja laskemalla <a href="http://www.finnpanel.fi/tulokset/radio/krt/viimeisin/tavoittavuus.html">Finnpanelin</a> datasta esim. Radio Novalla on satunnaisena hetkenä noin 50000 kuulijaa.</p>
+
+        <p>Äkkiseltään miljoona soittokertaa kuulostaa paljolta ellei ota huomioon a) aikaa ja b) yleisön kokoa. Minkälaisen jättihitin kuulet 0,2 kertaa koko vuoden aikana? Joko Spotify on todella, todella pieni osa musiikinkuuntelua tai hittikappaleita soitetaan suhteessa harvemmin kuin radiossa.</p>
+
+        <h3>Taustaoletukset</h3>
+
+        <p>Koska kaikkea dataa ei ole käytettävissä, joudun tekemään melko suuria yksinkertaistuksia, jotka ovat lähes vuorenvarmasti vääriä. Jos pystyt tarjoamaan parempaa dataa, voin korjata mallia paremmaksi. Alla olevassa listattuna tärkeimmät oletukset.</p>
+
+        <ul>
+          <li>Spotify-soittokorvaus sekä siihen sisältyvä Teosto-korvaus kasvaa lineaarisesti (ts. kymmenkertainen soittomäärä kasvattaa korvauksen kymmenkertaiseski).</li>
+          <li>Radion kuuntelijaluvuissa on jouduttu tekemään melkoisia arvauksia datan ollessa melko karkealla tasolla.</li>
+        </ul>
+
+
+
 
 
       </div></div>
+
+      <footer>
+        <div class="row">
+          <div class="large-12 columns panel"> 
+
+        <p>Timo Koola, sivuston lähdekoodi saatavilla Githubista. Kommentteja voit lähettää sähköpostitse (etunimi.sukunimi at gmail) tai twiittaamalla <a href="https://www.twitter.com/tkoola">@tkoola</a>.</p>
+      </div>
+    </div>
+      </footer>
 
    
     <!-- build:js scripts/vendor/vendor.js -->
